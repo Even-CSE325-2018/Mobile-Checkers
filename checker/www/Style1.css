@@ -1,0 +1,28 @@
+th {
+    height: 11.9vh;
+    width: 11vw;
+    padding: 0px;
+    margin: auto;
+    border: 2px solid black;
+}
+
+th.WhiteTile {
+    background-color: white;
+    alt: "whiteTile";
+}
+
+th.BlackTile {
+    background-color: black;
+    alt: "BlackTile";
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+    margin: auto;
+}
+
+img {
+    width: 55%;
+    height: 75%;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+
+<head>
+    <title>Checkers Game</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="2D Online Checkers Game">
+    <meta name="keywords" content="Checkers, CheckersGame, CheckersOnline">
+    <!--for search engines -->
+    <meta name="author" content="Even Team">
+    <link rel="stylesheet" href="Style1.css">
+</head>
+
+<body>
+    <table id="MainFrame">
+        <tr>
+            <th id="H1" class="WhiteTile Ones" onclick="ClickMe(0,0)"></th>
+            <th id="G1" class="BlackTile Ones" onclick="ClickMe(0,1)"><img class="White" src="./Icons/White.png"></th>
+            <th id="F1" class="WhiteTile Ones" onclick="ClickMe(0,2)"></th>
+            <th id="E1" class="BlackTile Ones" onclick="ClickMe(0,3)"><img class="White" src="./Icons/White.png"></th>
+            <th id="D1" class="WhiteTile Ones" onclick="ClickMe(0,4)"></th>
+            <th id="C1" class="BlackTile Ones" onclick="ClickMe(0,5)"><img class="White" src="./Icons/White.png"></th>
+            <th id="B1" class="WhiteTile Ones" onclick="ClickMe(0,6)"></th>
+            <th id="A1" class="BlackTile Ones" onclick="ClickMe(0,7)"><img class="White" src="./Icons/White.png"></th>
+        </tr>
+        <tr class="Rev">
+            <th id="H2" class="BlackTile Twos" onclick="ClickMe(1,0)"><img class="White" src="./Icons/White.png"></th>
+            <th id="G2" class="WhiteTile Twos" onclick="ClickMe(1,1)"></th>
+            <th id="F2" class="BlackTile Twos" onclick="ClickMe(1,2)"><img class="White" src="./Icons/White.png"></th>
+            <th id="E2" class="WhiteTile Twos" onclick="ClickMe(1,3)"></th>
+            <th id="D2" class="BlackTile Twos" onclick="ClickMe(1,4)"><img class="White" src="./Icons/White.png"></th>
+            <th id="C2" class="WhiteTile Twos" onclick="ClickMe(1,5)"></th>
+            <th id="B2" class="BlackTile Twos" onclick="ClickMe(1,6)"><img class="White" src="./Icons/White.png"></th>
+            <th id="A2" class="WhiteTile Twos" onclick="ClickMe(1,7)"></th>
+        </tr>
+        <tr class="Nor">
+            <th id="H3" class="WhiteTile Threes" onclick="ClickMe(2,0)"></th>
+            <th id="G3" class="BlackTile Threes" onclick="ClickMe(2,1)"><img class="White" src="./Icons/White.png"></th>
+            <th id="F3" class="WhiteTile Threes" onclick="ClickMe(2,2)"></th>
+            <th id="E3" class="BlackTile Threes" onclick="ClickMe(2,3)"><img class="White" src="./Icons/White.png"></th>
+            <th id="D3" class="WhiteTile Threes" onclick="ClickMe(2,4)"></th>
+            <th id="C3" class="BlackTile Threes" onclick="ClickMe(2,5)"><img class="White" src="./Icons/White.png"></th>
+            <th id="B3" class="WhiteTile Threes" onclick="ClickMe(2,6)"></th>
+            <th id="A3" class="BlackTile Threes" onclick="ClickMe(2,7)"><img class="White" src="./Icons/White.png"></th>
+        </tr>
+        <tr class="Rev">
+            <th id="H4" class="BlackTile Fours" onclick="ClickMe(3,0)"></th>
+            <th id="G4" class="WhiteTile Fours" onclick="ClickMe(3,1)"></th>
+            <th id="F4" class="BlackTile Fours" onclick="ClickMe(3,2)"></th>
+            <th id="E4" class="WhiteTile Fours" onclick="ClickMe(3,3)"></th>
+            <th id="D4" class="BlackTile Fours" onclick="ClickMe(3,4)"></th>
+            <th id="C4" class="WhiteTile Fours" onclick="ClickMe(3,5)"></th>
+            <th id="B4" class="BlackTile Fours" onclick="ClickMe(3,6)"></th>
+            <th id="A4" class="WhiteTile Fours" onclick="ClickMe(3,7)"></th>
+        </tr>
+        <tr class="Nor">
+            <th id="H5" class="WhiteTile Fives" onclick="ClickMe(4,0)"></th>
+            <th id="G5" class="BlackTile Fives" onclick="ClickMe(4,1)"></th>
+            <th id="F5" class="WhiteTile Fives" onclick="ClickMe(4,2)"></th>
+            <th id="E5" class="BlackTile Fives" onclick="ClickMe(4,3)"></th>
+            <th id="D5" class="WhiteTile Fives" onclick="ClickMe(4,4)"></th>
+            <th id="C5" class="BlackTile Fives" onclick="ClickMe(4,5)"></th>
+            <th id="B5" class="WhiteTile Fives" onclick="ClickMe(4,6)"></th>
+            <th id="A5" class="BlackTile Fives" onclick="ClickMe(4,7)"></th>
+        </tr>
+        <tr class="Rev">
+            <th id="H6" class="BlackTile Sixes" onclick="ClickMe(5,0)"><img class="Red" src="./Icons/Red.png"></th>
+            <th id="G6" class="WhiteTile Sixes" onclick="ClickMe(5,1)"></th>
+            <th id="F6" class="BlackTile Sixes" onclick="ClickMe(5,2)"><img class="Red" src="./Icons/Red.png"></th>
+            <th id="E6" class="WhiteTile Sixes" onclick="ClickMe(5,3)"></th>
+            <th id="D6" class="BlackTile Sixes" onclick="ClickMe(5,4)"><img class="Red" src="./Icons/Red.png"></th>
+            <th id="C6" class="WhiteTile Sixes" onclick="ClickMe(5,5)"></th>
+            <th id="B6" class="BlackTile Sixes" onclick="ClickMe(5,6)"><img class="Red" src="./Icons/Red.png"></th>
+            <th id="A6" class="WhiteTile Sixes" onclick="ClickMe(5,7)"></th>
+        </tr>
+        <tr class="Nor">
+            <th id="H7" class="WhiteTile Sevens" onclick="ClickMe(6,0)"></th>
+            <th id="G7" class="BlackTile Sevens" onclick="ClickMe(6,1)"><img class="Red" src="./Icons/Red.png"></th>
+            <th id="F7" class="WhiteTile Sevens" onclick="ClickMe(6,2)"></th>
+            <th id="E7" class="BlackTile Sevens" onclick="ClickMe(6,3)"><img class="Red" src="./Icons/Red.png"></th>
+            <th id="D7" class="WhiteTile Sevens" onclick="ClickMe(6,4)"></th>
+            <th id="C7" class="BlackTile Sevens" onclick="ClickMe(6,5)"><img class="Red" src="./Icons/Red.png"></th>
+            <th id="B7" class="WhiteTile Sevens" onclick="ClickMe(6,6)"></th>
+            <th id="A7" class="BlackTile Sevens" onclick="ClickMe(6,7)"><img class="Red" src="./Icons/Red.png"></th>
+        </tr>
+        <tr class="Rev">
+            <th id="H8" class="BlackTile Eights" onclick="ClickMe(7,0)"><img class="Red" src="./Icons/Red.png"></th>
+            <th id="G8" class="WhiteTile Eights" onclick="ClickMe(7,1)"></th>
+            <th id="F8" class="BlackTile Eights" onclick="ClickMe(7,2)"><img class="Red" src="./Icons/Red.png"></th>
+            <th id="E8" class="WhiteTile Eights" onclick="ClickMe(7,3)"></th>
+            <th id="D8" class="BlackTile Eights" onclick="ClickMe(7,4)"><img class="Red" src="./Icons/Red.png"></th>
+            <th id="C8" class="WhiteTile Eights" onclick="ClickMe(7,5)"></th>
+            <th id="B8" class="BlackTile Eights" onclick="ClickMe(7,6)"><img class="Red" src="./Icons/Red.png"></th>
+            <th id="A8" class="WhiteTile Eights" onclick="ClickMe(7,7)"></th>
+        </tr>
+    </table>
+    <script src="Script1.js"></script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+</body>
+
+</html>
